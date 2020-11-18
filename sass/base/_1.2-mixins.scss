@@ -1,0 +1,38 @@
+// Set text color
+@function set-text-color($color) {
+  @if (brightness($color) > 60) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}
+
+//  Set bg color
+@mixin set-bg-color($color) {
+  background: $color;
+  color: set-text-color($color);
+}
+
+// Set bg img
+@mixin set-bg-img($path) {
+  background-image: $path;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+// Flex-center
+@mixin flex-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Position absolute in center
+@mixin center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
