@@ -1,0 +1,32 @@
+.hero {
+    min-height: 100vh;
+    padding-top: 18rem;
+
+    &-title {
+        font-size: 3.2rem;
+        font-weight: 300;
+        color: $secondary-color;
+        padding: 0 3rem;
+        margin-bottom: 25rem;
+    }
+
+    &-bg-video {
+        height: 60vh;
+        //overflow: hidden;
+        position: relative;
+    }
+
+    &-iframe-container {
+        height: 100%;
+        opacity: .4;
+        transform: scale3d(1.2, 1.2, 1);
+        transform-style: preserve-3d;
+        
+
+        &.animate {
+            transform: scale3d(2,2,1) translateY(-5rem);
+            opacity: 1;
+            transition: transform $t-time-1 ease-in, opacity $t-time-1 linear;
+        }
+    }
+}

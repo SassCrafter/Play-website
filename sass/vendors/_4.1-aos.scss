@@ -1,0 +1,12 @@
+[data-aos="hero-video-animation"] {
+    opacity: .4;
+    transform: scale(1.2);
+    transform-style: preserve-3d;
+    
+
+    &.aos-animate {
+        opacity: 1;
+        transform: scale(2) translateY(-10rem);
+        transition: transform 2s ease-in-out, opacity 2s linear;
+    }
+}

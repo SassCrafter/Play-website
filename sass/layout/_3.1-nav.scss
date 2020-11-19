@@ -1,0 +1,27 @@
+.nav {
+    width: 100%;
+    height: $nav-height;
+    background: transparent;
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-list {
+        //height: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: .5rem;
+
+        li:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+}
+
+.logo {
+    width: 8rem;
+}

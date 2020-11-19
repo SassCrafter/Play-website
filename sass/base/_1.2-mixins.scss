@@ -1,6 +1,6 @@
 // Set text color
 @function set-text-color($color) {
-  @if (brightness($color) > 60) {
+  @if (lightness($color) > 60) {
     @return $black;
   } @else {
     @return $white;
@@ -15,7 +15,7 @@
 
 // Set bg img
 @mixin set-bg-img($path) {
-  background-image: $path;
+  background-image: url($path);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

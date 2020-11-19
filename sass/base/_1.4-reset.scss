@@ -12,5 +12,33 @@ html {
 
 body {
   font-size: 1.6rem;
-  @include set-bg($black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  @include set-bg-color($black);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4 {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.7rem;
+  color: $light-gray;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+img {
+  width: 100%;
+  
 }
