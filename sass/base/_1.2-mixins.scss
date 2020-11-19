@@ -36,3 +36,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// Media query
+@mixin media($size) {
+  @if ($size == "tablet") {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  @if ($size == "laptop") {
+    @media screen and (min-width: $laptop) {
+      @content;
+    }
+  }
+  @if ($size == "pc") {
+    @media screen and (min-width: $pc) {
+      @content;
+    }
+  }
+}

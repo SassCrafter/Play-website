@@ -10,4 +10,18 @@
     height: 25vh;
     @include set-bg-img("../img/features/feature-3.jpeg");
   }
+
+  @include media("tablet") {
+    &-3 {
+      height: 40rem;
+    }
+  }
+  @include media("laptop") {
+    &-3 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      height: 30rem;
+    }
+  }
 }
