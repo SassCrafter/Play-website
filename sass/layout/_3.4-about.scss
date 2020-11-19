@@ -1,25 +1,21 @@
 .about {
-    padding: 4rem 0;
+  padding: 4rem 0;
 
-    &-img {
-        margin-top: 6rem;
-        width: 100vw;
-        height: 50rem;
-        
-        &-1 {
-            @include set-bg-img("../img/about/about-1.jpg");
-        }
-        &-2 {
-            @include set-bg-img("../img/about/about-2.jpg");
-        }
+  &-img {
+    &-1 {
+      @include set-bg-img("../img/about/about-1.jpg");
     }
+    &-2 {
+      @include set-bg-img("../img/about/about-2.jpg");
+    }
+  }
 
-    .link {
-        padding: 0;
-        margin: 2rem 0;
-        font-size: 1.7;
-        i {
-            font-size: 1.5rem;
-        }
+  .link {
+    padding: 0;
+    margin: 2rem 0;
+    font-size: 1.7;
+    i {
+      font-size: 1.5rem;
     }
+  }
 }

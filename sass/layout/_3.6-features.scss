@@ -1,0 +1,13 @@
+.features-img {
+  &-1 {
+    @include set-bg-img("../img/features/feature-1.jpg");
+  }
+  &-2 {
+    @include set-bg-img("../img/features/feature-2.jpg");
+  }
+  &-3 {
+    width: 100%;
+    height: 25vh;
+    @include set-bg-img("../img/features/feature-3.jpeg");
+  }
+}
